@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+.header{
+    background-color: #DEE8FF;
+    /* height: 85vh; */
+    padding-bottom: 65px;
+}
+.navbar{
+    position: fixed;
+    background-color: #DEE8FF;
+    width: 100%;
+    z-index: 999;
+}
+.logo{
+    font-weight: 700;
+}
+.nav-link,.hire-me-btn{
+    font-weight: 600;
+    font-size: 18px;
+}
+button{
+    border: none;
+}
+.header-body{
+    padding-top: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header-body h1{
+    font-family: sans-serif;
+    animation: textanimation 1s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+@keyframes textanimation{
+    0%{
+        letter-spacing: 20px;
+    }
+
+    100%{
+        letter-spacing: 1px;
+    }
+}
+.header-body img{
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid #DEE8FF;
+    box-shadow: 
+    2px 4px 3px 0px rgba(88, 88, 88, .425),
+    -2px -4px 3px 0px rgba(88, 88, 88, .425);
+    margin: auto;
+   
+}
+.banner-img{
+}
+.all-style{
+    padding-top: 70px;
+}
+.style-1,.style-2,.style-3{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    background: #DEE8FF;
+    box-shadow: 
+    2px 5px 3px 0px rgba(255, 255, 255, .615),
+    -2px -5px 5px 0px rgba(88, 88, 88, .345);
+   transform: rotate(41deg);
+   align-self: right;
+   border: 2px solid #DEE8FF;
+}
+.facebook,.linkedin,.github{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    background: #DEE8FF;
+    box-shadow: 
+    2px 5px 3px 0px rgba(255, 255, 255, .615),
+    -2px -5px 5px 0px rgba(88, 88, 88, .345);
+   border-radius: 50%;
+   align-self: right;
+   border: 2px solid #DEE8FF;
+    
+}
+a.navbar-brand.text-uppercase.logo {
+    color: #17A2B8;
+    font-size: 28px;
+}
+.connect-me{
+    
+}
+.facebook:hover{
+    border: 2px solid skyblue;
+    transition: .3s;
+}
+.linkedin:hover{
+    border: 2px solid #006AA4;
+    transition: .3s;
+}
+.github:hover{
+    border: 2px solid #000;
+    transition: .3s;
+}
+.header-body .facebook a, .linkedin a, .github a{
+    font-size: 35px;
+    line-height: 53px;
+}
+.github a{
+    color: black;
+}
+.linkedin a{
+    color: #006AA4;
+}
+.project-section,.blog-section,.contact-me-section{
+    padding-top: 100px;
+}
+.contact-me-section{
+    background-color: #DEE8FF;
+    margin-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.card{
+    box-shadow: 0px 0px 20px #DEE8FF;
+    border: none;
+}
+.card:hover{
+    background-color: #DEE8FF;
+    transition: .3s;
+    box-shadow: 0px 0px 15px gray;
+}
+.card img{
+    height: 190px;
+}
+.form{
+    box-shadow: 
+    3px 5px 3px 0px lightgray,
+    -3px -5px 5px 0px rgba(88, 88, 88, .345);
+}
+.form input, .form textarea{
+    border: none;
+    
+}
+button.btn.btn-info.submit {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer{
+    background-color: #DEE8FF;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
