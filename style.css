@@ -7,16 +7,83 @@
 html {
     scroll-behavior: smooth;
   }
+  body{
+    font-family: 'Viga', sans-serif;
+  }
+  h1{
+    font-family: 'Viga', sans-serif;
+  }
+  button{
+      border-radius: 5px;
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+  .navbar a{
+    font-family: 'Fondamento', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #222436;
+    
+  }
+  a.nav-link{
+    color: #222436!important;
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+a.nav-link:hover{
+      color: #17A2B8!important;
+      transition: .3s;
+  }
+  a.nav-link.text-white{
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white!important;
+  }
+  a.navbar-brand.text-info.logo {
+    font-size: 30px;
+    font-family: 'Kaushan Script', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.btn-contact{
+    border: 2px solid #17A2B8;
+    transition: .3s;
+    font-family: 'Viga', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.btn-contact:hover{
+    border: 2px solid #17A2B8;
+    background-color: #17A2B8;
+    color: white;
+    transition: .3s;
+}
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background: #DEE8FF;
+  }
+  #particles-js .header-body{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+
+  }
 .header{
-    background-color: #DEE8FF;
+    /* background-color: #DEE8FF; */
     /* height: 85vh; */
-    padding-bottom: 65px;
+    /* padding-bottom: 65px; */
+    /* height: 100vh; */
 }
 .navbar{
     position: fixed;
     background-color: #DEE8FF;
     width: 100%;
     z-index: 999;
+    border-bottom: 1px solid white;
 }
 .logo{
     font-weight: 700;
@@ -28,16 +95,20 @@ html {
 button{
     border: none;
 }
-.header-body{
-    padding-top: 150px;
+.header{
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-family: 'Viga', sans-serif; */
 }
 .header-body h1{
     font-family: sans-serif;
-    animation: textanimation 1s ease-in-out;
+    font-family: 'Viga', sans-serif;
+    /* animation: textanimation 3s ease-in-out; */
     overflow: hidden;
     white-space: nowrap;
     text-align: left;
+    animation-iteration-count: infinite;
+    letter-spacing: 2px;
 }
 @keyframes textanimation{
     0%{
@@ -56,25 +127,10 @@ button{
     2px 4px 3px 0px rgba(88, 88, 88, .425),
     -2px -4px 3px 0px rgba(88, 88, 88, .425);
     margin: auto;
+    transform: rotate(-4deg);
    
 }
 .banner-img{
-}
-.all-style{
-    padding-top: 70px;
-}
-.style-1,.style-2,.style-3{
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    align-items: center;
-    background: #DEE8FF;
-    box-shadow: 
-    2px 5px 3px 0px rgba(255, 255, 255, .615),
-    -2px -5px 5px 0px rgba(88, 88, 88, .345);
-   transform: rotate(41deg);
-   align-self: right;
-   border: 2px solid #DEE8FF;
 }
 .facebook,.linkedin,.github{
     width: 55px;
@@ -119,18 +175,55 @@ a.navbar-brand.text-uppercase.logo {
 .linkedin a{
     color: #006AA4;
 }
-.project-section,.blog-section,.contact-me-section{
-    padding-top: 100px;
+.skill-left{
+    border-right: 1px dotted gray;
+}
+
+/* projects */
+
+.read-btn{
+    border: 2px solid #17A2B8;
+}
+.skill-section,.project-section,.blog-section,.contact-me-section{
+    padding-top: 150px;
+    padding-bottom: 40px;
+}
+.project-section h1,.blog-section h1,.contact-me-section h1{
+
+}
+h3.text-center.card-title{
+    color:#222436;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+    transform: translateX(0);
+}
+.card img{
+    border: 5px solid #DEE8FF;
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img img{
+    transition: all 2s ease;
+}
+.card:hover img{
+    transform: scale(1.2);
+}
+.card-body h6{
+    color:#222436;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 .contact-me-section{
     background-color: #DEE8FF;
     margin-top: 100px;
-    padding-top: 60px;
+    padding-top: 70px;
     padding-bottom: 50px;
 }
 .card{
     box-shadow: 0px 0px 20px #DEE8FF;
-    border: none;
+    /* border: 4px solid #DEE8FF; */
+    background-color: white;
 }
 .card:hover{
     background-color: #DEE8FF;
@@ -139,6 +232,29 @@ a.navbar-brand.text-uppercase.logo {
 }
 .card img{
     height: 190px;
+}
+/* blog */
+.blog-section{
+    background-color: #fff;
+}
+.single-blog{
+   background-color: #F7F7F7;
+   padding: 15px;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+.blog-img{
+    overflow: hidden;
+}
+.blog-img img{
+    box-shadow: 0px 0px 20px lightgray;
+    transition: all 2s ease;
+}
+.single-blog:hover img{
+    transform: scale(1.4);
+}
+.blog-text{
+    position: relative;
 }
 .form{
     box-shadow: 
@@ -155,8 +271,89 @@ button.btn.btn-info.submit {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-footer{
-    background-color: #DEE8FF;
-    padding-bottom: 30px;
-    padding-top: 30px;
+.footer-section{
+    background-color: #222436;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    
+}
+.footer-section p{
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.footer-left,.footer-middle{
+    border-right: 1px dotted gray;
+}
+.footer-icon{
+    font-size: 20px;
+    width: 144px;
+}
+.footer-medium i,.footer-fb i, .footer-github i, .footer-linkedin i{
+    font-size: 20px;
+}
+.text-flat{
+    color: #F7F7F7;
+}
+svg.svg-inline--fa.fa-heart.fa-w-16
+{
+    color: red;
+    font-size: 20px;
+}
+svg.svg-inline--fa.fa-globe.fa-w-16,svg.svg-inline--fa.fa-file.fa-w-12, svg.svg-inline--fa.fa-globe.fa-w-16,svg.svg-inline--fa.fa-envelope.fa-w-16 {
+    color: #17A2B8;
+    font-size: 18px;
+}
+.footer-right a {
+    color: #F7F7F7;
+    font-size: 14px;
+    font-weight: 400;
+}
+a.mr-3.text-muted.footer-fb, a.mr-3.text-muted.footer-linkedin, a.mr-3.text-muted.footer-github,a.text-muted.footer-medium{
+    color: lightgray!important;
+    transition: .3s; 
+    border-bottom: 2px solid #222436;
+}
+a.mr-3.text-muted.footer-fb:hover, a.mr-3.text-muted.footer-linkedin:hover, a.mr-3.text-muted.footer-github:hover,a.text-muted.footer-medium:hover{
+    color: white!important;
+    transition: .3s;
+    border-bottom: 2px solid white;
+}
+
+@media(min-width:320px) and (max-width:575px){
+    .footer-left{
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px dotted gray;
+    }
+    .footer-left .footer-icon{
+        margin: auto;
+    }
+    .footer-middle{
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px dotted gray;
+    }
+    .footer-right{
+        text-align: center;
+    }
+}
+
+@media(min-width:576px) and (max-width:767px){
+    .footer-left{
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px dotted gray;
+    }
+    .footer-left .footer-icon{
+        margin: auto;
+    }
+    .footer-middle{
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px dotted gray;
+    }
+    .footer-right{
+        text-align: center;
+    }
 }
